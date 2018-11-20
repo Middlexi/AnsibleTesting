@@ -2,8 +2,8 @@
 - 
   hosts: "192.168.6.131"
   remote_user: root
-  tasks: 
+   tasks: 
     - 
       name: Place File
-       path: "/tmp/yallo"
-       state: touch 
+      path: "/tmp/yallo"
+      state: touch 
