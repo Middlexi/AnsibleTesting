@@ -12,7 +12,7 @@
      args:
         warn: no
    - name: Updates packages
-     file: msg="{{ result.stdout_lines }}"
-        path: "/tmp/update"
-        state: "touch"
+     file: "{{ result.stdout_lines }}"
+         path: "/tmp/update"
+         state: "touch"
      #https://serverfault.com/questions/883314/show-updated-packages-with-ansible-package-management
