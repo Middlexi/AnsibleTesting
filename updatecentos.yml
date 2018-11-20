@@ -1,7 +1,11 @@
 ---
  - hosts: 192.168.6.131
    tasks:
-     - name: update the system
-       yum:
-           name: "*"
-           state: latest
+      - name: install all updates
+            yum:
+            name: '*'
+            update_cache: yes
+            state: latest
+            register: result
+      - name: Show Output
+            debug: msg="{{ result.stdout_lines }}"
