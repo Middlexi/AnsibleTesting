@@ -1,0 +1,8 @@
+---
+- hosts: 192.168.6.131
+  tasks:
+  - name: create file
+    file: 
+    path: /temp/yallo
+    state: touch
+
