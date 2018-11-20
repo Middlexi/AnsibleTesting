@@ -2,21 +2,18 @@
  - hosts: 192.168.6.131
    tasks:
    - name: install all updates
-        yum:
+     yum:
         name: '*'
         update_cache: yes
         state: latest
    - name: List updated packages
-        shell: rpm -qa --last | grep "$(date +%a\ %d\ %b\ %Y)" |cut -f 1 -d " "
+     shell: rpm -qa --last | grep "$(date +%a\ %d\ %b\ %Y)" |cut -f 1 -d " "
         register: result
         args:
         warn: no
    - name: Updates packages
-<<<<<<< HEAD
-     file: "{{ result.stdout_lines }}"
-         path: "/tmp/update"
-         state: "touch"
-     #https://serverfault.com/questions/883314/show-updated-packages-with-ansible-package-management
-=======
-        debug: msg="{{ result.stdout_lines }}"
->>>>>>> parent of f04f860... Update updatecentos.yml
+     debug: msg="{{ result.stdout_lines }}"
+
+
+        
+        #https://serverfault.com/questions/883314/show-updated-packages-with-ansible-package-management
