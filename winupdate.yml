@@ -1,5 +1,5 @@
 - name: Windows Update
-  hosts: 192.168.6.129
+  hosts: windows
   gather_facts: false
   tasks:
     - name: Run Update
