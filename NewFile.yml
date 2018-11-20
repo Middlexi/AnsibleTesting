@@ -5,6 +5,5 @@
   tasks: 
     - 
       name: Place File
-       file:
        path: /tmp/yallo
        state: touch 
