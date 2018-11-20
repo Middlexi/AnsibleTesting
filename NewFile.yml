@@ -3,6 +3,6 @@
   remote_user: root
   tasks:
    - name: Place File
-      Path: /tmp/yallo
-      state: touch
+     Path: /tmp/yallo
+     state: touch
           
