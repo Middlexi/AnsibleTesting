@@ -4,4 +4,4 @@
    - name: Place File
      file:
          Path: "/tmp/yallo"
-         state: touch
+         state: "touch"
