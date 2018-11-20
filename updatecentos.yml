@@ -1,0 +1,7 @@
+---
+ - hosts: 192.168.6.131
+   tasks:
+     - name: update the system
+       yum:
+           name: "*"
+           state: latest
