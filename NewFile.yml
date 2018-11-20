@@ -1,8 +1,7 @@
 ---
-- hosts: 192.168.6.131
-  remote_user: root
-  tasks:
+ - hosts: 192.168.6.131
+   tasks:
    - name: Place File
-         file:
+     file:
          Path: /tmp/yallo
          state: touch
