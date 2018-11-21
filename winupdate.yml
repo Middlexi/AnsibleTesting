@@ -1,8 +1,5 @@
 - name: Windows Update
   hosts: windows
-    
-
-  gather_facts: false
   tasks:
     - name: Run Update
       win_updates:
