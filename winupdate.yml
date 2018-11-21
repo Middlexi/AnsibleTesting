@@ -1,11 +1,6 @@
 - name: Windows Update
-  hosts: 192.168.6.129
-    ansible_user:ansibletest
-    ansible_password:AnsibleTest123!@#
-    ansible_port:5986
-    ansible_connection:winrm
-    ansible_winrm_server_cert_validation:ignore
-    ansible_winrm_transport:basic
+  hosts: windows
+    
 
   gather_facts: false
   tasks:
