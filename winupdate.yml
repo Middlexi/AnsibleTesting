@@ -3,5 +3,8 @@
   tasks:
     - name: Run Update
       win_updates:
-        category_names: ['SecurityUpdates','CriticalUpdates','UpdateRollups', 'Updates', 'DefinitionUpdates']
+        category_names: 
+        - SecurityUpdates
+        - CriticalUpdates
+        - UpdateRollups
         reboot: yes
